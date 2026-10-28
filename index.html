@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HELO — Discover</title><meta name="description" content="A playful, infinite world of fabric and texture."><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="pages.css"><link rel="stylesheet" href="hifi.css"></head>
+<body class="loading"><main id="world" tabindex="0" aria-label="Infinite fabric canvas. Drag or use arrow keys to explore."><canvas id="canvas"></canvas></main>
+<header><button class="logo" id="reset" aria-label="HELO, return home">HELO</button><nav><button id="search">SEARCH</button><button id="home">HOME</button></nav></header>
+<h1>DISCOVER<br>WHAT YOU’RE INTERESTED IN!</h1><p class="hint">DRAG TO DISCOVER <span>↔</span></p><span id="cursor">DRAG</span>
+<div id="loader" role="status" aria-label="Loading HELO"><div class="loader-mark"><div class="shapes"><i class="circle"></i><i class="line blue"></i><i class="triangle"></i><i class="star"></i><i class="line orange"></i></div><div class="wordmark">HELO</div><div class="progress"><i></i></div></div></div>
+<dialog id="searchDialog"><form method="dialog"><button class="close" aria-label="Close search">×</button></form><label for="query">FIND YOUR TEXTURE</label><input id="query" type="search" placeholder="Try yellow, blue, linen…" autocomplete="off"><div class="tags"><button data-filter="all">ALL</button><button data-filter="yellow">YELLOW</button><button data-filter="blue">BLUE</button><button data-filter="linen">LINEN</button></div><p id="result">Choose a colour or material to explore.</p><button id="explore">EXPLORE ↗</button></dialog>
+<section id="pages" hidden tabindex="-1"></section>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="catalog.js"></script><script src="app.js"></script><script src="site.js"></script><script src="fabrics.js"></script><script src="hifi.js"></script></body></html>
+
+
